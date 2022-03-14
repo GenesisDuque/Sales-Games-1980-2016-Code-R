@@ -1,9 +1,10 @@
 #Gráficos - Pórcion de videos juegos 1980-2016
 
+count_gender = Analisis_de_genero_VideoGames_Sales_1980_2016$Cantidad
+type_gender = Analisis_de_genero_VideoGames_Sales_1980_2016$Gender
 
 #conversión a porcentaje
 Porcentaje_gender = round(count_gender*100 / 16448)
-
 
 #gráfico por porcentaje
 pie(Porcentaje_gender, labels = paste0(Porcentaje_gender,"%"), col =brewer.pal(n=12, name="Paired"))
@@ -23,4 +24,5 @@ plot(x, Analisis_de_genero_VideoGames_Sales_1980_2016$NA_sales, type="l", main="
 lines(x, Analisis_de_genero_VideoGames_Sales_1980_2016$EU_sales, col=2, type = "l")
 lines(x, Analisis_de_genero_VideoGames_Sales_1980_2016$JA_sales, col=3, type="l")
 lines(x,Analisis_de_genero_VideoGames_Sales_1980_2016$Others_sales, col=4, type="l")
-legend("bottomleft", legend = type_gender)
+
+
