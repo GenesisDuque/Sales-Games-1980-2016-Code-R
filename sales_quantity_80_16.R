@@ -1,0 +1,55 @@
+#Estadistica bidimensiona 1980 a 2016
+#varible xi=cantidad de juegos de cada genero
+#varible yi=ventas de unidades de juegos por cada genero
+
+# Norte America
+x1_na_quantity <- Analisis_de_genero_VideoGames_Sales_1980_2016$`Cantidad de juegos NA` 
+y1_na_sales <- Analisis_de_genero_VideoGames_Sales_1980_2016$NA_sales
+
+x1_y1_na <- data.frame("Quantity" = x1_na_quantity, "Sales"=y1_na_sales)
+
+covarianza_na <- cov(x1_na_quantity,y1_na_sales)
+correlacion_na <- corr(x1_y1_na)
+
+plot(x1_na_quantity,y1_na_sales)
+
+
+
+# Europa 
+
+x2_eu_quantity <-Analisis_de_genero_VideoGames_Sales_1980_2016$`Cantidad de juego EU`
+y2_eu_sales <-Analisis_de_genero_VideoGames_Sales_1980_2016$EU_sales
+
+
+x2_y2_eu <- data.frame("Quantity" = x2_eu_quantity, "Sales"=y2_eu_sales)
+
+covarianza_eu <- cov(x2_eu_quantity,y2_eu_sales)
+correlacion_eu <- corr(x2_y2_eu)
+
+plot(x2_eu_quantity,y2_eu_sales)
+
+#Japón
+
+x3_jp_quantity <-Analisis_de_genero_VideoGames_Sales_1980_2016$`Cantidad    de juego JP`
+y3_jp_sales <-Analisis_de_genero_VideoGames_Sales_1980_2016$JP_sales
+
+x3_y3_jp <- data.frame("Quantity" = x3_jp_quantity, "Sales"=y3_jp_sales)
+
+
+covarianza_jp <- cov(x3_jp_quantity,y3_jp_sales)
+correlacion_jp <- corr(x3_y3_jp)
+
+
+plot(x3_jp_quantity,y3_jp_sales)
+
+#Others
+
+x4_ot_quantity <-Analisis_de_genero_VideoGames_Sales_1980_2016$`Cantidad de juego Others`
+y4_ot_sales <-Analisis_de_genero_VideoGames_Sales_1980_2016$`Cantidad de juego Others`
+
+x4_y4_ot <- data.frame("Quantity" = x4_ot_quantity, "Sales"=y4_ot_sales)
+
+covarianza_ot <- cov(x4_ot_quantity,y4_ot_sales)
+correlacion_ot <- corr(x4_y4_ot)
+
+plot(x4_ot_quantity,y4_ot_sales)
