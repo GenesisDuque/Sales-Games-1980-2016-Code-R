@@ -84,7 +84,7 @@ na_var_80_16 = var(All_Data$NA_Sales)
 na_sd_80_16 = sd(All_Data$NA_Sales)
 
 #Correlación de Pearson
-na_coef_80_16 = na_sd_80_16 / na_median_80_16
+na_coef_80_16 = na_sd_80_16 / na_mean_80_16
 
 ######################################################################
 
@@ -99,7 +99,7 @@ eu_var_80_16 = var(All_Data$EU_Sales)
 eu_sd_80_16 = sd(All_Data$EU_Sales)
 
 #Correlación de Pearson
-eu_coef_80_16 = eu_sd_80_16 / eu_median_80_16
+eu_coef_80_16 = eu_sd_80_16 / eu_mean_80_16
 
 ######################################################################
 
@@ -114,7 +114,7 @@ jp_var_80_16 = var(All_Data$JP_Sales)
 jp_sd_80_16 = sd(All_Data$JP_Sales)
 
 #Correlación de Pearson
-jp_coef_80_16 = jp_sd_80_16 / jp_median_80_16
+jp_coef_80_16 = jp_sd_80_16 / jp_mean_80_16
 
 ######################################################################
 
@@ -129,7 +129,7 @@ other_var_80_16 = var(All_Data$Other_Sales)
 other_sd_80_16 = sd(All_Data$Other_Sales)
 
 #Correlación de Pearson
-other_coef_80_16 = other_sd_80_16 / other_median_80_16
+other_coef_80_16 = other_sd_80_16 / other_mean_80_16
 
 ######################################################################
 
