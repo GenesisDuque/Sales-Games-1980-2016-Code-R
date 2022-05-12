@@ -24,7 +24,7 @@ var.test(x1,x2,alternative='two.sided', conf.level = 1-alpha)
 
 #resultado
 #El p-value es bastante bajo y F= 8,06 dentro de la regón critica. por tanto las
-#varianzas son distintas . Rechazamos H0
+#varianzas son distintas . Rechamos H0
 
 #hallamos ahora el contraste de igualdad de medias
 #Aplicamos t student
